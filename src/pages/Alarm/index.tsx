@@ -9,15 +9,7 @@ export default function Alarm() {
       <AddNav name="List Alarm" link="./Alarm/AddAlarm" />
       <div className="p-2 space-y-2">
         {ListAlarms.map((list, i) => (
-          <AlarmCard
-            key={i}
-            nama={list.nama}
-            jam={list.jam}
-            tanggal={list.tanggal}
-            ulangi={list.ulangi}
-            password={list.password}
-            ringtone={list.ringtone}
-          />
+          <AlarmCard key={i} nama={list.nama} jam={list.jam} />
         ))}
       </div>
       <BottomNav />

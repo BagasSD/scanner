@@ -1,22 +1,10 @@
-import { useRouter } from "next/router"
 import { useState } from "react"
 
 interface cardProps {
   jam: string
   nama: string
-  tanggal: string
-  ringtone: string
-  ulangi: number
-  password: string
 }
-export const AlarmCard: React.FC<cardProps> = ({
-  jam,
-  nama,
-  tanggal,
-  ringtone,
-  ulangi,
-  password,
-}) => {
+export const AlarmCard: React.FC<cardProps> = ({ jam, nama }) => {
   const [toggle, setToggle] = useState(true)
   const toggleClass = " transform translate-x-5"
 

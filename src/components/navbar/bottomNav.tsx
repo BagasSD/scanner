@@ -1,8 +1,4 @@
-import {
-  ArchiveBoxIcon,
-  CameraIcon,
-  ClockIcon,
-} from "@heroicons/react/24/solid"
+import { ArchiveBoxIcon, ClockIcon } from "@heroicons/react/24/solid"
 import Link from "next/link"
 
 export const BottomNav: React.FC = () => {
